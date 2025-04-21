@@ -11,7 +11,7 @@ git clone https://github.com/zicofarry/Brainrot-Programming-Language.git
 Untuk command dari bahasa ini sendiri sebenarnya sama seperti bahasa C namun hanya sintaksnya diubah menjadi istilah braionrot.
 - [List Command](COMMAND.md)
 
-# Example
+# Example MEWING🤫🧏 
 **Conditional**
 ```
 skibidi n
