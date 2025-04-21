@@ -57,6 +57,16 @@ Endif/Endfor
 stahp
 ```
 
+inisialisasi i = 0
+```
+sahur
+```
+
+batas/hingga
+```
+tilz
+```
+
 **Tipe Data**
 
 Integer ```skibidi```
