@@ -9,7 +9,7 @@ git clone https://github.com/zicofarry/Brainrot-Programming-Language.git
 
 # Command
 Untuk command dari bahasa ini sendiri sebenarnya sama seperti bahasa C namun hanya sintaksnya diubah menjadi istilah braionrot.
-- [List Command](Command.md)
+- [List Command](COMMAND.md)
 
 Fungsi-Fungsi Dasar :
 input (Scanf) ->  gyat 
