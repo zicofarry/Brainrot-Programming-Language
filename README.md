@@ -15,14 +15,17 @@ Untuk command dari bahasa ini sendiri sebenarnya sama seperti bahasa C namun han
 **Conditional**
 ```
 skibidi n
+bombaclat "Masukan angka broww!"
 gyatt n
+
 goofy n peak 0 :
-    bombaclat " positif "
-sus n match 0 :
-    bombaclat " nol "
+    bombaclat "Angka Masukan adalah bilangan Positif"
+sus n mid 0 :
+    bombaclat "Angka Masukan adalah bilangan Negatif"
 ahh
-    bombaclat " negatif "
+    bombaclat "Kamu masukin angka nol yahh"
 stahp
+
 danYappp
 ```
 
