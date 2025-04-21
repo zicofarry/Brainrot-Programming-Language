@@ -12,4 +12,30 @@ Untuk command dari bahasa ini sendiri sebenarnya sama seperti bahasa C namun han
 - [List Command](COMMAND.md)
 
 # Example
+**Conditional**
+```
+skibidi n
+gyatt n
+goofy n peak 0 :
+    bombaclat " positif "
+sus n match 0 :
+    bombaclat " nol "
+ahh
+    bombaclat " negatif "
+stahp
+danYappp
+```
 
+**looping**
+```
+skibidi n
+gyatt n
+skibidi x is 1
+
+lingaguliguli x cooked n * 10000 :
+    bombaclat "Wilujeng Sumping."
+    x +10000 aura
+stahp
+
+danYappp
+```
