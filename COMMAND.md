@@ -24,7 +24,7 @@ unpause
 
 Ekseskusi blok akhir (Finally Funtion)  
 ```
-danYapp
+danYappp
 ```
 
 Melakukan perulangan (for)  
