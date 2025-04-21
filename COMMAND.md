@@ -4,7 +4,7 @@
 
 input(Scanf) 
 ```
-gyat
+gyatt
 ```
 
 output (Printf) 
