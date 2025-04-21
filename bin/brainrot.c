@@ -1,0 +1,1 @@
+// your code in brainrot language will interpreted to this c source file
