@@ -65,7 +65,7 @@ extern char cw[51];            // Kata saat ini (current word)
 extern char tape[2025];         // Pita Masukan
 
 // mesin baris
-extern char lines[200][2025];  // Maks 200 baris, masing-masing maksimal 1024 karakter
+extern char lines[200][2025];  // Maks 200 baris, masing-masing maksimal 2024 karakter
 extern int line_count;    // Total jumlah baris
 extern int curr_line;     // Baris saat ini
 
