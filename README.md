@@ -8,7 +8,7 @@ git clone https://github.com/zicofarry/Brainrot-Programming-Language.git
 ```
 
 # Command
-Untuk command dari bahasa ini sendiri sebenarnya sama seperti bahasa C namun hanya sintaksnya diubah menjadi istilah braionrot.
+Untuk command dari bahasa ini sendiri sebenarnya sama seperti bahasa C namun hanya sintaksnya diubah menjadi istilah brainrot.
 - [List Command](COMMAND.md)
 
 # Example MEWING🤫🧏 
