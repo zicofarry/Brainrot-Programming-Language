@@ -7,6 +7,11 @@ Clone this repository
 git clone https://github.com/zicofarry/Brainrot-Programming-Language.git
 ```
 
+Run di Command Prompt
+```bash
+brot examples/[nama_file].brainrot
+```
+
 # Command
 Untuk command dari bahasa ini sendiri sebenarnya sama seperti bahasa C namun hanya sintaksnya diubah menjadi istilah brainrot.
 - [List Command](COMMAND.md)
