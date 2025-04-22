@@ -1,0 +1,49 @@
+#include "parser.h"
+#include "../lexer/lexer.h"
+
+// prosedur untuk memproses token keyword while
+void lingaguliguli(char* line){
+    char output[256] = "";
+    char temp[128];
+
+    strcat(output, "while(");
+    start(line);
+    inc(line);
+
+    while(1){
+        char* token = getcw();
+        int len = strlen(token);
+        int is_last = 0;
+
+        if(token[len - 1] == ':'){
+            token[len - 1] = '\0'; // hapus :
+            is_last = 1; // tandai bahwa ini token terakhir
+        }
+
+        if(getType(token) != NULL && strcmp(getType(token), "string") == 0){
+            char left[64], op[32], right[64];
+            strcpy(left, token);
+            inc(line);
+            strcpy(op, getcw());
+            inc(line);
+            strcpy(right, getcw());
+        
+            if(right[strlen(right) - 1] == ':'){
+                right[strlen(right) - 1] = '\0';
+                is_last = 1;
+            }
+        
+            parserStrcmp(left, op, right, temp);
+            strcat(output, temp);
+        }else{
+            parserOperator(token, temp);
+            strcat(output, temp);
+        }
+        
+        if(is_last)break;
+        inc(line);
+    }
+
+    strcat(output, "){");
+    strcpy(line, output);
+}
