@@ -1,22 +1,23 @@
-#include <stdio.h>   // deklarasi library yang akan digunakan
-#include <string.h>  // deklarasi library yang akan digunakan
-#include <stdlib.h>  // deklarasi library yang akan digunakan
-#include <ctype.h>  // deklarasi library yang akan digunakan
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
 #include "../lexer/lexer.h"
 
-void parserOperator(char *token, char* str);
-void parserStrcmp(char* left, char* op, char* right, char* result);
-void parserAuraOperation(char pita[]);
-void parseAssignment(char* line);
-void mainParser(char* line);
-void skibidi(char* line);
-void skibidiToilet(char* line);
-void sigma(char* line);
-void sigmaBoy(char* line);
-void gyatt(char* line);
-void bombaclat(char* line);
-void tungtungtung(char* line);
-void lingaguliguli(char* line);
-void goofy(char* line);
-void sus(char* line);
-void ahh(char* line);
+// Deklarasi prosedur 
+void mainParser(char* line);                                            // untuk memproses string baris menjadi bahasa c (parsing)
+void parserOperator(char *token, char* str);                            // untuk memparsing operator
+void parserStrcmp(char* left, char* op, char* right, char* result);     // untuk memparsing operator (untuk string)
+void parserAuraOperation(char pita[]);                                  // untuk parsing aura (increment/ decrement)
+void parseAssignment(char* line);                                       // untuk memparsing assignment
+void skibidi(char* line);                                               // untuk memparsing token tipe data int
+void skibidiToilet(char* line);                                         // untuk memparsing token tipe data float
+void sigma(char* line);                                                 // untuk memparsing token tipe data char
+void sigmaBoy(char* line);                                              // untuk memparsing token tipe data string
+void gyatt(char* line);                                                 // untuk memparsing token fungsi scanf
+void bombaclat(char* line);                                             // untuk memparsing token fungsi printf
+void tungtungtung(char* line);                                          // untuk memparsing token keyword for
+void lingaguliguli(char* line);                                         // untuk memparsing token keyword while
+void goofy(char* line);                                                 // untuk memparsing token keyword if
+void sus(char* line);                                                   // untuk memparsing token keyword else if
+void ahh(char* line);                                                   // untuk memparsing token keyword else
