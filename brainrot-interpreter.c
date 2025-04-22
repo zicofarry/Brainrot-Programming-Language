@@ -1,40 +1,43 @@
 #include "lib/logics/lexer/lexer.h"
 #include "lib/logics/parser/parser.h"
 
+// kalau kamu mau ngoding di cmd, uncomment kode di bawah, dan int main yang arg sampe read, jadiin komen atau hapus aja    
+// int main(){
+//     readFromStdin();
+
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         printf("Usage: %s <brainrot-file>\n", argv[0]);
         return 1;
     }
-
     read(argv[1]);
-
-// kalau kamu mau ngoding di cmd, uncomment kode di bawah, dan int main diatas sampe read, jadiin komen atau hapus aja    
-// int main(){
-//     readFromStdin();
 
     pisahbaris(tape);
     tape[0] = '\0';
     startLine();
     while (1) {
-        // Tokenisasi baris sebelum parsing
+        // tokenisasi baris sebelum parsing
         tokenizeLine(argv[1], getLine(), curr_line + 1);
-        mainParser(getLine());
-        strcat(tape, getLine());
-        strcat(tape, "\n");  // kalau tiap baris perlu dipisah newline
 
+        // parsing line yang kita miliki dengan memanggil prosedur mainParser
+        mainParser(getLine());
+
+        // setelah parsing dilakukan, simpan hasil parsing an ke dalam string tape
+        strcat(tape, getLine());
+        strcat(tape, "\n");
+
+        // jika sudah line terakhir, break
         if (isLastLine()) break;
 
         nextLine();
     }
 
-
-    if(error == 0){
-        printf(GREEN "Interpretation successful!\n" RESET);
-        write("bin/brainrot.c");
-        system("gcc bin/brainrot.c -o bin\\brainrot && bin\\brainrot");
-    }else{
-        printf(RED "Interpretation failed!\n" RESET);
+    if(!error){ // jika tidak ditemukan error
+        printf(GREEN "Interpretation successful!\n" RESET); // print success
+        write("bin/brainrot.c"); // write tape ke dalam file brainrot.c
+        system("gcc bin/brainrot.c -o bin\\brainrot && bin\\brainrot"); // kompilasi file, dan langsung eksekusi
+    }else{ // jika ditemukan error
+        printf(RED "Interpretation failed!\n" RESET); // print failed
     }
     
     return 0;
