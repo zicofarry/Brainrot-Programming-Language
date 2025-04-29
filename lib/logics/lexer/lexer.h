@@ -1,8 +1,8 @@
 #ifndef LEXER_H
 #define LEXER_H
-#include <stdio.h>   // deklarasi library yang akan digunakan
-#include <string.h>  // deklarasi library yang akan digunakan
-#include <ctype.h>  // deklarasi library yang akan digunakan
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 #define RED     "\033[1;31m"
 #define GREEN   "\033[0;32m"
 #define WHITE   "\033[97m"
@@ -21,7 +21,7 @@ typedef struct {
     char type[10]; // jenis tipe data
 } Variable;
 
-// Token types
+// deklarasi token types
 typedef enum {
     DATA_TYPE,
     INTEGER_NUM,
@@ -40,39 +40,35 @@ typedef enum {
     UNKNOWN
 } TokenType;
 
-// Struct untuk menyimpan informasi token
+// bungkusan untuk menyimpan informasi token
 typedef struct {
-    char lexeme[101];    // isi kata/token
-    TokenType type;      // tipe token
-    int line;            // baris token
-    int column;          // kolom awal token
+    char lexeme[101];           // isi kata/token
+    TokenType type;             // tipe token
+    int line;                   // baris token
+    int column;                 // kolom awal token
 } TokenInfo;
 
 
-// DEKLARASI VARIABEL GLOBAL
-
+/* DEKLARASI VARIABEL GLOBAL */
 // menyimpan variabel
 extern Variable variables[100];
 extern int var_count;
-
 // mesin karakter
-extern int idx;                // Index dari karakter terakhir pada kata
-extern int wlen;               // Panjang kata (word length)
-extern char cc;                // Karakter saat ini (current character)
-
+extern int idx;                 // Index dari karakter terakhir pada kata
+extern int wlen;                // Panjang kata (word length)
+extern char cc;                 // Karakter saat ini (current character)
 // mesin kata
-extern char cw[51];            // Kata saat ini (current word)
+extern char cw[51];             // Kata saat ini (current word)
 extern char tape[2025];         // Pita Masukan
-
 // mesin baris
-extern char lines[200][2025];  // Maks 200 baris, masing-masing maksimal 2024 karakter
-extern int line_count;    // Total jumlah baris
-extern int curr_line;     // Baris saat ini
-
+extern char lines[200][2025];   // Maks 200 baris, masing-masing maksimal 2024 karakter
+extern int line_count;          // Total jumlah baris
+extern int curr_line;           // Baris saat ini
 // tokenize 
-extern int error;
+extern int error;               // Value error, (jika nanti value nya 1, maka interpretasi akan gagal)
 
-// mesin karakter
+/* DEKLARASI PROSEDUR DAN FUNGSI */
+// Mesin karakter
 int EOP();
 void START(char pita[]);
 void INC(char pita[]);
@@ -81,7 +77,7 @@ void ADV(char pita[]);
 char GETCC();
 int GETIdx();
 
-// mesin kata
+// Mesin kata
 int eop(char pita[]);
 void start(char pita[]);
 void reset();
@@ -97,7 +93,7 @@ int ctape(char pita[]);
 void pisahtape(char pita[], char tmp[51][101]);
 int is_single_word(const char *str);
 
-// mesin baris
+// Mesin baris
 void pisahbaris(char pita[]);
 void startLine();
 void nextLine();
@@ -105,11 +101,10 @@ void prevLine();
 int isLastLine();
 char* getLine();
 
-// read and write
+// Read and write
 void readFromStdin();
 void read(char fileName[]);
 void write(char fileName[]);
-
 
 // Tambahkan variabel ke tabel
 void addVariable(char* name, char* type);
