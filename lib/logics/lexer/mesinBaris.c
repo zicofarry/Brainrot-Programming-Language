@@ -2,7 +2,7 @@
 
 int line_count = 0;
 int curr_line = 0;
-char lines[200][2025];
+char lines[200][5005];
 
 // prosedur untuk memisahkan string tape menjadi beberapa baris
 void pisahbaris(char pita[]) {
