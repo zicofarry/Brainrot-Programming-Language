@@ -1,6 +1,6 @@
 #include "lexer.h"
 
-char tape[2025]; // pita dari file .brainrot
+char tape[5005]; // pita dari file .brainrot
 
 // prosedur untuk membaca inputan dari cmd
 void readFromStdin() {
