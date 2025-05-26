@@ -4,7 +4,7 @@
 void parserOperator(char *token, char* str){
     if(strcmp(token, "butAlso") == 0){
         strcpy(str, " && ");
-    }else if(strcmp(token, "orNah") == 0){
+    }else if(strcmp(token, "orNahh") == 0){
         strcpy(str, " || ");
     }else if(strcmp(token, "peak") == 0){
         strcpy(str, " > ");
