@@ -1,5 +1,5 @@
 # Get To Know BrainrotLang ฅ^>⩊<^ ฅ ☕︎
-BrainrotLang adalah bahasa pemrograman yang sengaja dibuat unik dan nggak biasa. Semua sintaks dan strukturnya dibungkus dengan gaya yang absurd dan lucu. Jadi, daripada menggunakan kata-kata umum seperti if, while, atau print, di BrainrotLang kita bakal nemuin keyword aneh tapi familiar kayak skibidi, sigma, bruh, bahkan rizz. Semua diambil dari budaya internet dan meme-meme yang lagi rame.
+BrainrotLang adalah bahasa pemrograman yang sengaja dibuat unik dan nggak biasa. Semua sintaks dan strukturnya dibungkus dengan gaya yang absurd dan lucu. Jadi, daripada menggunakan kata-kata umum seperti if, while, atau print, di BrainrotLang kita bakal nemuin keyword aneh tapi familiar kayak skibidi, sigma, bruh, bahkan rizz. Semua diambil dari budaya internet dan meme-meme yang lagi rame dan viral.
 
 # Installation & Run 
 Clone this repository
