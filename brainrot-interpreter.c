@@ -34,8 +34,14 @@ int main(int argc, char *argv[]) {
 
     if(!error){ // jika tidak ditemukan error
         printf(GREEN "Interpretation successful!\n" RESET); // print success
-        write("bin/brainrot.c"); // write tape ke dalam file brainrot.c
-        system("gcc bin/brainrot.c -o bin\\brainrot && bin\\brainrot"); // kompilasi file, dan langsung eksekusi
+        write("brainrot.c"); // write tape ke dalam file brainrot.c
+        // kompilasi file, dan langsung eksekusi
+        #ifdef _WIN32
+            system("gcc brainrot.c -o brainrot_app && brainrot_app");
+        #else
+            system("gcc brainrot.c -o brainrot_app && ./brainrot_app");
+        #endif
+        remove("brainrot.c"); // remove file brainrot.c
     }else{ // jika ditemukan error
         printf(RED "Interpretation failed!\n" RESET); // print failed
     }

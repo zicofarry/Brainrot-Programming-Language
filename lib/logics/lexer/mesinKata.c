@@ -1,6 +1,5 @@
 #include "lexer.h"
 
-int idx;                // Index dari karakter terakhir pada kata
 char cw[51];            // Kata saat ini (current word)
 
 // cek eop
