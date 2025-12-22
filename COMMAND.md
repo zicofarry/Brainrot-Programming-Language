@@ -14,7 +14,7 @@ bombaclat
 
 Penugasan (Assign) 
 ```
-what the sigma [value] is [tipe data]
+[variable] is [value]
 ```
 
 Melanjutkan Perulangan (Continue)  

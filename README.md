@@ -3,6 +3,7 @@
 
 **BrainrotLang** adalah sebuah bahasa pemrograman *esoterik* (esolang) berbasis bahasa C yang dirancang untuk mengintegrasikan budaya internet modern dan terminologi meme ke dalam struktur pemrograman prosedural. Proyek ini bertujuan untuk mengeksplorasi pembuatan interpreter dengan sintaksis yang tidak konvensional namun tetap fungsional.
 
+---
 
 ## 🛠️ Prasyarat Sistem
 
@@ -11,6 +12,7 @@ Sebelum menggunakan BrainrotLang, pastikan sistem Anda telah memenuhi persyarata
 * **Node.js & NPM**: Digunakan untuk instalasi paket secara global.
 * **GCC Compiler (MinGW/Cygwin)**: Diperlukan untuk proses kompilasi kode hasil transpilasi ke dalam file eksekusi (.exe). Pastikan `gcc` sudah terdaftar dalam **Environment Variables (PATH)** Anda.
 
+---
 
 ## 🚀 Instalasi
 
@@ -33,6 +35,7 @@ cd Brainrot-Programming-Language
 
 ```
 
+---
 
 ## 💻 Penggunaan
 
@@ -43,12 +46,12 @@ brot <path_ke_file>/[nama_file].brainrot
 
 ```
 
+---
 
 ## 📜 Dokumentasi Perintah
 
 Dokumentasi ini berisi daftar lengkap sintaksis **BrainrotLang** dan padanannya dalam bahasa pemrograman C. Semua perintah harus ditulis dalam huruf kecil (*lowercase*) sesuai dengan spesifikasi interpreter.
 
----
 
 ### 1. Fungsi & Kontrol Alur (Basic Functions & Control Flow)
 
@@ -65,7 +68,6 @@ Dokumentasi ini berisi daftar lengkap sintaksis **BrainrotLang** dan padanannya 
 | `stahp` | `}` (End Block) | Penutup blok kode (End if/End for/End while). |
 | `danYappp` | `return 0;` | Mengakhiri eksekusi program (Finally function). |
 
----
 
 ### 2. Tipe Data (Data Types)
 
@@ -76,7 +78,6 @@ Dokumentasi ini berisi daftar lengkap sintaksis **BrainrotLang** dan padanannya 
 | `sigma` | `char` | Karakter tunggal. |
 | `sigmaBoy` | `char[] / string` | Kumpulan karakter (teks). |
 
----
 
 ### 3. Operator Logika & Perbandingan (Operators)
 
@@ -92,7 +93,6 @@ Dokumentasi ini berisi daftar lengkap sintaksis **BrainrotLang** dan padanannya 
 | `hitdiff` | `!=` | Tidak sama dengan. |
 | `is` | `=` | Inisialisasi/Penugasan nilai. |
 
----
 
 ### 4. Sintaks Khusus (Special Syntax)
 
@@ -111,7 +111,6 @@ Dokumentasi ini berisi daftar lengkap sintaksis **BrainrotLang** dan padanannya 
 `tilz` (Padanan: `limit` atau batas hingga)
 *Digunakan untuk menentukan batas akhir sebuah perulangan.*
 
----
 
 ### Tips Penggunaan
 
@@ -119,6 +118,7 @@ Pastikan setiap blok kode kondisional atau perulangan selalu diakhiri dengan key
 
 Daftar perintah selengkapnya dapat Anda akses pada: **[COMMAND.md](https://github.com/zicofarry/Brainrot-Programming-Language/blob/main/COMMAND.md)**
 
+---
 
 ## 📂 Contoh Implementasi (MEWING 🤫🧏)
 
