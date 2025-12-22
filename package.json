@@ -1,6 +1,6 @@
 {
   "name": "@zicofarry/brainrot-language",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "Brainrot programming language - The most aura programming language in this century.",
   "main": "brainrot-interpreter.c",
   "bin": {

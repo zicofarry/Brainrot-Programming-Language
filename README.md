@@ -166,7 +166,6 @@ danYappp
 
 Proyek ini dikembangkan oleh **Muhammad 'Azmi Salam, Shakila Aulia, Repa Pitriani, Rifa Muhammad, Adwar Salman** sebagai bagian dari eksplorasi kreatif dalam pengembangan bahasa pemrograman.
 
-* **Lisensi**: UPI (Universitas Pendidikan Indonesia)
 * **Repositori**: [GitHub Project](https://github.com/zicofarry/Brainrot-Programming-Language)
 * **Isu & Bug**: [Laporkan di sini](https://github.com/zicofarry/Brainrot-Programming-Language/issues)
 

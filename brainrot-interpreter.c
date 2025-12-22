@@ -37,9 +37,9 @@ int main(int argc, char *argv[]) {
         write("brainrot.c"); // write tape ke dalam file brainrot.c
         // kompilasi file, dan langsung eksekusi
         #ifdef _WIN32
-            system("gcc brainrot.c -o brainrot_app && brainrot_app");
+            system("gcc brainrot.c -o brainrot && brainrot");
         #else
-            system("gcc brainrot.c -o brainrot_app && ./brainrot_app");
+            system("gcc brainrot.c -o brainrot && ./brainrot");
         #endif
         remove("brainrot.c"); // remove file brainrot.c
     }else{ // jika ditemukan error
