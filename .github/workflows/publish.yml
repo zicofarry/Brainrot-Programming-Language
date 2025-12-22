@@ -2,7 +2,7 @@ name: Publish to NPM and GitHub
 
 on:
   release:
-    types: [created] 
+    types: [created]
 
 jobs:
   build:
@@ -18,10 +18,15 @@ jobs:
         run: |
           npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
           npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       # 2. Publish ke GitHub Packages
       - name: Publish to GitHub Packages
         run: |
-          npm config set //npm.pkg.github.com/:_authToken=${{ secrets.G_TOKEN }}
-          npm config set @zicofarry:registry=https://npm.pkg.github.com
+          # Hapus config lama agar tidak bentrok
+          rm -f .npmrc 
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.G_TOKEN }}" > .npmrc
           npm publish --registry=https://npm.pkg.github.com
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.G_TOKEN }}

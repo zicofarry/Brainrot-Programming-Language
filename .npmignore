@@ -1,0 +1,10 @@
+*.pdf
+
+bin/*.exe
+bin/*.o
+bin/a.exe
+
+.npmrc
+.github/
+
+__test__/
