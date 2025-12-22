@@ -1,6 +1,6 @@
 {
   "name": "brainrot-language",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Brainrot programming language",
   "main": "brainrot-interpreter.c",
   "bin": {
@@ -14,5 +14,5 @@
     "url": "git+https://github.com/zicofarry/Brainrot-Programming-Language.git"
   },
   "author": "Muhammad 'Azmi Salam",
-  "license": "UPI"
+  "license": "MIT"
 }

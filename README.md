@@ -1,6 +1,9 @@
 
 # BrainrotLang (brot) 🧠☕︎
 
+[![npm version](https://img.shields.io/npm/v/brainrot-language.svg)](https://www.npmjs.com/package/brainrot-language)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/zicofarry/Brainrot-Programming-Language)
+
 **BrainrotLang** adalah sebuah bahasa pemrograman *esoterik* (esolang) berbasis bahasa C yang dirancang untuk mengintegrasikan budaya internet modern dan terminologi meme ke dalam struktur pemrograman prosedural. Proyek ini bertujuan untuk mengeksplorasi pembuatan interpreter dengan sintaksis yang tidak konvensional namun tetap fungsional.
 
 ---
@@ -84,7 +87,7 @@ Dokumentasi ini berisi daftar lengkap sintaksis **BrainrotLang** dan padanannya 
 | Brainrot Syntax | Operator C | Deskripsi |
 | --- | --- | --- |
 | `butAlso` | `&&` | Logika AND. |
-| `orNahh` | `||` | Logika OR. |
+| `orNahh` | `\|\|` | Logika OR. |
 | `peak` | `>` | Lebih besar dari. |
 | `mid` | `<` | Lebih kecil dari. |
 | `mogged` | `>=` | Lebih besar atau sama dengan. |
@@ -99,7 +102,6 @@ Dokumentasi ini berisi daftar lengkap sintaksis **BrainrotLang** dan padanannya 
 * **Penugasan (Assignment)**:
 ```text
 [variable] is [value]
-
 ```
 
 
@@ -168,6 +170,6 @@ danYappp
 Proyek ini dikembangkan oleh **Muhammad 'Azmi Salam, Shakila Aulia, Repa Pitriani, Rifa Muhammad, Adwar Salman** sebagai bagian dari eksplorasi kreatif dalam pengembangan bahasa pemrograman.
 
 * **Lisensi**: UPI (Universitas Pendidikan Indonesia)
-* **Repositori**: [GitHub Project](https://www.google.com/search?q=https://github.com/zicofarry/Brainrot-Programming-Language)
+* **Repositori**: [GitHub Project](https://github.com/zicofarry/Brainrot-Programming-Language)
 * **Isu & Bug**: [Laporkan di sini](https://github.com/zicofarry/Brainrot-Programming-Language/issues)
 
