@@ -1,0 +1,27 @@
+name: Publish to NPM and GitHub
+
+on:
+  release:
+    types: [created] 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 1. Publish ke npmjs.com
+      - name: Publish to npmjs.com
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
+          npm publish --access public
+
+      # 2. Publish ke GitHub Packages
+      - name: Publish to GitHub Packages
+        run: |
+          npm config set //npm.pkg.github.com/:_authToken=${{ secrets.G_TOKEN }}
+          npm config set @zicofarry:registry=https://npm.pkg.github.com
+          npm publish --registry=https://npm.pkg.github.com
