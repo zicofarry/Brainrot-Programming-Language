@@ -24,8 +24,7 @@ Sebelum menggunakan BrainrotLang, pastikan sistem Anda telah memenuhi persyarata
 Anda dapat menginstal BrainrotLang secara global untuk mengakses perintah `brot` dari direktori mana pun:
 
 ```bash
-npm install -g brainrot-language
-
+npm install -g @zicofarry/brainrot-language
 ```
 
 ### Metode 2: Melalui Repositori (Development)
@@ -45,7 +44,7 @@ cd Brainrot-Programming-Language
 Untuk menjalankan file sumber BrainrotLang (`.brainrot`), gunakan perintah berikut pada terminal:
 
 ```bash
-brot <path_ke_file>/[nama_file].brainrot
+brot nama_file.brainrot
 
 ```
 
@@ -142,7 +141,6 @@ ahh
 stahp
 
 danYappp
-
 ```
 
 ### 2. Struktur Perulangan (Looping)
@@ -160,7 +158,6 @@ lingaguliguli x cooked n * 10000 :
 stahp
 
 danYappp
-
 ```
 
 ---
